@@ -1,0 +1,30 @@
+.agentInfo {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .agent {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    .avatar {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+  }
+
+  .icons {
+    display: flex;
+    gap: 15px;
+
+    .icon {
+      width: 20px;
+      height: 20px;
+      cursor: pointer;
+    }
+  }
+}

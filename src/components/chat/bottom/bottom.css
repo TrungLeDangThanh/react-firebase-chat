@@ -1,0 +1,64 @@
+.bottom {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  gap: 15px;
+  border-top: 1px solid #dddddd35;
+
+  .icons {
+    display: flex;
+    gap: 15px;
+
+    .icon {
+      width: 20px;
+      height: 20px;
+      cursor: pointer;
+    }
+  }
+
+  .inputBar {
+    flex: 1;
+    background-color: rgba(17, 25, 40, 0.5);
+    display: flex;
+    padding: 10px;
+    gap: 15px;
+    border-radius: 20px;
+
+    input {
+      flex: 1;
+      background-color: transparent;
+      border: none;
+      outline: none;
+      color: white;
+      font-size: medium;
+    }
+
+    .emoji {
+      position: relative;
+
+      .icon {
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+      }
+
+      .picker {
+        position: absolute;
+        bottom: 50px;
+        left: 0px;
+      }
+    }
+  }
+
+  .sendButton {
+    border-radius: 50%;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    .icon {
+      width: 40px;
+      height: 40px;
+    }
+  }
+}

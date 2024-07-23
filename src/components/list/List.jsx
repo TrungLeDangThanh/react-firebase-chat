@@ -1,14 +1,14 @@
-import ChatList from "./chatList/ChatList"
-import UserInfo from "./userInfo/UserInfo"
-import "./list.css"
+import ContactList from "./contactList/ContactList.jsx";
+import AgentInfo from "./agentInfo/AgentInfo.jsx";
+import "./list.css";
 
 const List = () => {
   return (
     <div className="list">
-      <UserInfo />
-      <ChatList />
+      <AgentInfo />
+      <ContactList />
     </div>
-  )
-}
+  );
+};
 
-export default List
+export default List;

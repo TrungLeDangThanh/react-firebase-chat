@@ -32,7 +32,7 @@ body {
 ::-webkit-scrollbar-track {
   background: transparent;
 }
- 
+
 ::-webkit-scrollbar-thumb {
   background: rgb(17, 25, 40);
   border-radius: 3px;
