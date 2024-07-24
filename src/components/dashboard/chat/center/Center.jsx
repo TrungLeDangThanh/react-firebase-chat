@@ -1,6 +1,13 @@
+import { useEffect, useRef } from "react";
 import "./center.css";
 
 const Center = () => {
+  const scrollToEnd = useRef(null);
+
+  useEffect(() => {
+    scrollToEnd.current?.scrollIntoView({ behavior: "smooth" });
+  }, []);
+
   return (
     <div className="center">
       <div className="message">
@@ -82,6 +89,7 @@ const Center = () => {
           <span>1 min ago</span>
         </div>
       </div>
+      <div ref={scrollToEnd}></div>
     </div>
   );
 };

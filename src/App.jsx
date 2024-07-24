@@ -1,15 +1,10 @@
-import List from "./components/list/List.jsx";
-import Chat from "./components/chat/Chat.jsx";
-import Detail from "./components/detail/Detail.jsx";
+import Login from "./components/login/Login.jsx";
+import Dashboard from "./components/dashboard/Dashboard.jsx";
 
 const App = () => {
-  return (
-    <div className="container">
-      <List />
-      <Chat />
-      <Detail />
-    </div>
-  );
+  const user = false;
+
+  return <div className="container">{user ? <Dashboard /> : <Login />}</div>;
 };
 
 export default App;

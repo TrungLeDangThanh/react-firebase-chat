@@ -1,0 +1,60 @@
+.registerPanel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+
+  .texts {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+
+    span {
+      font-size: 50px;
+    }
+  }
+
+  form {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    input {
+      padding: 15px;
+      border: none;
+      outline: none;
+      border-radius: 5px;
+      color: white;
+      font-size: medium;
+      background-color: rgba(17, 25, 40, 0.6);
+    }
+
+    label {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      cursor: pointer;
+      text-decoration: underline;
+
+      .avatar {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+    }
+
+    .signUp {
+      background-color: #1f8ef17f;
+      font-weight: 500;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #1f8ef1ff;
+      }
+    }
+  }
+}
